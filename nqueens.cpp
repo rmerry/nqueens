@@ -4,7 +4,7 @@
  * Date:   01/04/2018
  *
  * A demonstration of an algorithm for solving the N Queens Problem
- * using backgracking
+ * using backtracking
  *
  * N Queens Problem: https://en.wikipedia.org/wiki/N_queens_problem
  * Backtracking:     https://en.wikipedia.org/wiki/Backtracking
