@@ -41,7 +41,7 @@ int main(int argc, char * argv[]) {
  * complexity of O(n) while having time complexity of O(n^2).
  */
 void nqueens(int r, int n, int * count, bool cols[], bool diag1[], bool diag2[]) {
-  // if we have reach the nth row we have place a queen
+  // if we have reached the nth row we have placed a queen
   // on every row, i.e., found a valid configuration
   if (r == n) {
     *count += 1;
@@ -57,7 +57,7 @@ void nqueens(int r, int n, int * count, bool cols[], bool diag1[], bool diag2[])
     cols[c] = diag1[r+c] = diag2[c-r+n-1] = true;
     nqueens(r + 1, n, count, cols, diag1, diag2);
 
-    // backtrack! remove the queen on the column and both diagonals
+    // backtrack! remove the queen from the column and both diagonals
     cols[c] = diag1[r+c] = diag2[c-r+n-1] = false;
   }
 }
